@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/weatherLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="30">
+
+            <ImageView
+                android:id="@+id/weatherAnim"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="10"
+                android:layout_alignParentTop="true" />
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="20"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/listView"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="天气:"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/today1"
+            android:textSize="15sp"
+            android:paddingTop="30dp"
+            android:paddingLeft="50dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/towea"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp"
+            android:layout_alignBottom="@+id/today1"
+            android:layout_toRightOf="@+id/today1"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="温度:"
+            android:textColor="@color/colorWhite"
+            android:id="@+id/today2"
+            android:textSize="15sp"
+            android:paddingTop="60dp"
+            android:paddingLeft="50dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/totem"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp"
+            android:layout_alignBottom="@+id/today2"
+            android:layout_toRightOf="@+id/today2"
+            android:layout_marginLeft="10dp"/>
+
+    </RelativeLayout>
+
+    <include layout="@layout/reload"/>
+
+</RelativeLayout>

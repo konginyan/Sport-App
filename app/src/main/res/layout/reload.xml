@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:id="@+id/reloadLayout"
+              android:gravity="center"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/notfound"/>
+
+    <TextView
+        android:id="@+id/errmsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="检测不到网络，请检查网络状况"
+        android:textSize="20sp"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/reload"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="重新加载"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorblue"/>
+
+</LinearLayout>

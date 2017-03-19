@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <cn.kongin.sm.LineGraphicView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/line_graphic"
+        android:background="@color/colorblue"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/line_graphic"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/borderbottom"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="周步数达成天数"
+                android:id="@+id/textView"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:textColor="@color/colorBlack"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5天"
+                android:id="@+id/textView2"
+                android:layout_gravity="center"
+                android:textColor="@color/colorpray"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/borderbottom">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="周平均步数"
+                android:id="@+id/textView5"
+                android:textColor="@color/colorBlack"
+                android:layout_gravity="center"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7000步"
+                android:id="@+id/textView7"
+                android:textColor="@color/colorpray"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:background="@drawable/borderbottom"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="周平均消耗卡路里"
+                android:id="@+id/textView3"
+                android:textColor="@color/colorBlack"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="200千卡"
+                android:id="@+id/textView4"
+                android:layout_gravity="center"
+                android:textColor="@color/colorpray"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

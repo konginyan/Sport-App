@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="roundProgressBar">
+        <attr name="radius" format="dimension" /><!--半径-->
+        <attr name="strokeWidth" format="dimension" /><!--画笔宽度-->
+        <attr name="circleColor" format="color" /><!--内圆颜色-->
+        <attr name="ringColor" format="color" /><!--进度条颜色-->4
+        <attr name="Progress" format="integer" /><!--进度-->
+        <attr name="totalProgress" format="integer" /><!--总进度-->
+        <attr name="textColor" format="color|reference" /><!--字体颜色-->
+        <attr name="textSize" format="integer" /><!--字体大小-->
+        <attr name="bigCircleColor" format="color" /><!--外圆颜色-->
+        <attr name="barStyle" format="boolean" /><!--画的方式-->
+    </declare-styleable>
+</resources>

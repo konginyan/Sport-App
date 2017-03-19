@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="graybar">#a9a9a9</color>
+    <color name="oldgray">#747171</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorPray">#787777</color>
+    <color name="color_999999">#4e4d4d</color>
+    <color name="color_ff4631">#ff4631</color>
+    <color name="color_f2f2f2">#f2f2f2</color>
+    <color name="colorpray">#a9a9a9</color>
+    <color name="colorblue">#48d7ff</color>
+    <color name="stepFragment">#46faee</color>
+    <color name="ringback">#f70381</color>
+    <color name="ring">#ffffff</color>
+    <color name="red">#ef0606</color>
+    <color name="bb">#5074e1</color>
+    <color name="colorWhite">#ffffff</color>
+</resources>

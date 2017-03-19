@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="cn.kongin.sm.RunActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/graybar">
+
+    </android.support.v7.widget.Toolbar>
+
+    <ImageButton
+        android:id="@+id/trigger"
+        android:layout_marginTop="60dp"
+        android:layout_width="250dp"
+        android:layout_height="320dp"
+        android:background="@drawable/startlogo"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/trigger"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/borderedges">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="历史最高里程:"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/maxlength"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0m"
+                android:textSize="30sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/borderedges">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="最高平均速度:"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/maxspeed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0m/s"
+                android:textSize="30sp"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <SlidingDrawer
+        android:id="@+id/drawer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:handle="@+id/control"
+        android:content="@+id/historylist"
+        android:allowSingleTap="true">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:id="@+id/control"
+            android:text="上拉查看历史"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:background="@color/colorpray"/>
+
+        <ListView
+            android:id="@+id/historylist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:dividerHeight="10dp"
+            android:background="@color/color_f2f2f2"/>
+    </SlidingDrawer>
+
+</RelativeLayout>
